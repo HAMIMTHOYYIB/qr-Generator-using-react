@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 99vh;
+  background-color: #238ab2;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.qr-code-section {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.controls-section {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #238ab2;
+  padding: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background-color: #156588;
   color: white;
+  border: 2px solid black;
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#download-btn {
+  margin-top: 20px;
+  background-color: #0f475f;
+  padding: 10px 70px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.color-buttons {
+  margin-top: 20px;
+}
+
+.color-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
 }
